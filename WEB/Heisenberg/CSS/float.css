@@ -1,0 +1,23 @@
+.float {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 30px;
+    background-image: url(../assets/images/walter-icon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.float img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

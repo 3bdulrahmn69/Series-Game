@@ -1,0 +1,169 @@
+.contact-us {
+    width: 100%;
+    background-color: #FEE3D5;
+}
+
+.contact-us form {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:                        
+    ". . name name name email email email . ."
+    ". . order order order date date date . ."
+    ". . country country country location location location . ."
+    ". . notes notes notes notes notes notes . ."
+    ". . terms terms terms terms terms terms . ."
+    ". . submit . . . . . . .";
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.contact-us form #name {
+    color: #fff;
+    grid-area: name;
+    background-color: #ACC5BD;
+    border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    -ms-border-radius: 4px 0 0 0;
+    -o-border-radius: 4px 0 0 0;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+
+.contact-us form #name:default {
+    border: 1px solid #fff;
+}
+
+.contact-us form #email{
+    color: #fff;
+    grid-area: email;
+    background-color: #ACC5BD;
+    border-radius: 0 4px 0 0 ;
+    -webkit-border-radius: 1px solid #fff;
+    -moz-border-radius: 1px solid #fff;
+    -ms-border-radius: 1px solid #fff;
+    -o-border-radius: 1px solid #fff;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+
+.contact-us form #order {
+    color: #fff;
+    grid-area: order;
+    background-color: #ACC5BD;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+
+.contact-us form #date {
+    color: #fff;
+    grid-area: date;
+    background-color: #ACC5BD;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+
+.contact-us form #country {
+    grid-area: country;
+    color: #fff;
+    background-color: #ACC5BD;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+
+.contact-us form #country option ,
+.contact-us form #order option{
+    font-size: 15px;
+}
+
+.contact-us form #location {
+    grid-area: location;
+    color: #fff;
+    background-color: #ACC5BD;
+    border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    -ms-border-radius: 4px 0 0 0;
+    -o-border-radius: 4px 0 0 0;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+
+
+.contact-us form #notes {
+    color: #fff;
+    grid-area: notes;
+    background-color: #ACC5BD;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -ms-border-radius: 0 0 4px 4px;
+    -o-border-radius: 0 0 4px 4px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #fff;
+    resize: none; 
+}
+
+
+.contact-us form input[type=text]:focus,
+.contact-us form input[type=email]:focus,
+.contact-us form input[type=date]:focus,
+.contact-us form textarea:focus {
+    border: 1px solid #fff;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+.contact-us form .terms {
+    grid-area: terms;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us form .terms p {
+    padding: 10px;
+}
+
+.contact-us form .terms a {
+    color: #ACC5BD;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-us form .terms #checkbox {
+    width: 14px;
+}
+
+
+
+.contact-us form button {
+    grid-area: submit;
+    min-width: 150px;
+    min-height: 50px;
+    margin-bottom: 10px;
+    background-color: #ACC5BD;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contact-us form button:hover {
+    opacity: 0.9;
+}

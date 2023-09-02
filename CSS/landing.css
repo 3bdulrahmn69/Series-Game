@@ -1,0 +1,166 @@
+.landing {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing .title {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+.landing .title h2 {
+    padding: 10px;
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+}
+
+.landing h2::before {
+    position: absolute;
+    content: "";
+    padding: 0 10px;
+    width: 250px;
+    height: 50px;
+    z-index: -1;
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    animation: change-bg;
+    -webkit-animation: change-bg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.landing h2:hover:before{
+    animation-play-state: paused;
+}
+
+@keyframes change-bg {
+    0% {
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 22%, rgba(54,50,139,1) 100%);
+    }
+
+    100% {
+        background: linear-gradient(90deg, rgba(54,50,139,1) 0%, rgb(94, 83, 83) 80%, rgba(0,0,0,1) 100%);
+    }
+}
+
+.landing .content { 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.landing .content .card {
+    width: calc(fit-content + 10px);
+    height: calc(fit-content + 10px);
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 0px 5px 1px #4a4747;
+    position: relative;
+}
+
+.landing .content .card:hover:after{
+    opacity: 0;
+}
+
+.landing .content .card::after {
+    content: attr(data-text);
+    padding: 5px 12px 5px 8px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}
+
+.landing .content .card img{
+    width: 250px;
+    height: 350px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.landing .content .card img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.landing .content .card .icon {
+    position: absolute;
+    z-index: 1;
+    color: #081C85;
+    font-size: 18px;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.landing .content .under:hover::before
+{
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    opacity: 1;
+}
+
+.landing .content .under:hover img {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 0.1;
+}
+
+.landing .content .under::before {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    padding: 4px 8px;
+    background-color: #4a4747;
+    content: "UNDER DEVELOPING";
+    top: 50%;
+    left: 50px;
+    opacity: 0;
+}

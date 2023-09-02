@@ -1,0 +1,11 @@
+.tag-name {
+    display: flex;
+    justify-content: center;
+}
+
+.tag-name h2 {
+    font-size: 90px;
+    color: #ffffff;
+    font-weight: lighter;
+    stroke: black 5px;
+}
