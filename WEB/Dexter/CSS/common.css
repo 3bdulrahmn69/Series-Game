@@ -12,6 +12,13 @@
         cursor: default;
 }
 
+body {
+        background: linear-gradient(188deg, rgba(68,0,2,1) 0%, rgba(6,0,0,1) 50%, rgba(76,0,2,1) 100%);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+
 ::-webkit-scrollbar {
         width: 10px;
 }

@@ -1,0 +1,98 @@
+.landing {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.landing .contact {
+    min-width: 250px;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0 0 6px 1px #4f4d4d;
+}
+
+.landing .header-txt {
+    padding: 20px 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing .header-txt i{
+    font-size: 50px;
+}
+
+.landing .header-txt h2 {
+    font-size: 35px;
+}
+
+.landing .contact .box-area {
+    height: 350px;
+    padding: 10px;
+}
+
+.landing .contact p {
+    padding: 10px;
+}
+
+.landing .contact .box-area input {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    margin: 2px 5px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.landing .contact .box-area .email {
+    width: 412px;
+}
+
+.landing .contact .box-area textarea {
+    width: 412px;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    margin: 2px 5px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.landing .contact .box-area button {
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+    padding: 3px 8px;
+    margin: 2px 5px;
+    background-color: #ACC5BD;
+    border: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}

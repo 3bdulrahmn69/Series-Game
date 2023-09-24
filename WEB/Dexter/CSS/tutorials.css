@@ -1,3 +1,176 @@
 .tutorials {
-    width: 100%;
+    width: 80%;
+    margin: 20px auto;
+    background: linear-gradient(188deg, rgba(68, 0, 2, 0.5) 0%, rgba(6, 0, 0, 0.5) 50%, rgba(76, 0, 3, 0.5) 100%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.tutorials .kill {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #D1CBCC;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+.tutorials .kill h3 {
+    margin: 5px 0;
+    background-color: #DED9DA;
+    font-size: 4rem;
+    padding: 5px 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.tutorials .kill:hover h3{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+
+.tutorials .tutorials-content .tools {
+    width: 80%;
+    margin: 10px auto;
+    background-color: #231515;
+    color: #aaaaaa;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.tutorials .tutorials-content .top-title {
+    display: flex;
+    align-items: center;
+}
+
+.tutorials .tutorials-content .top-title h4 {
+    font-size: 20px;
+}
+
+.tutorials .tutorials-content .top-title p {
+    font-size: 18px;
+}
+
+.tutorials .tutorials-content .tools .top-title {
+    display: flex;
+    padding: 10px;
+}
+
+.tutorials .tutorials-content .tools .tool-pic {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card .pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card .pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card .pic img:hover {
+    transform: skew(15deg) scale(1.3);
+    -webkit-transform: skew(15deg) scale(1.3);
+    -moz-transform: skew(15deg) scale(1.3);
+    -ms-transform: skew(15deg) scale(1.3);
+    -o-transform: skew(15deg) scale(1.3);
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card  p {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card button {
+    width: 250px;
+    height: calc(150px /3);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card button:hover {
+    opacity: 0.8;
+    transform: scale(1.1) translate(10px,0px);
+    -webkit-transform: scale(1.1) translate(10px,0px);
+    -moz-transform: scale(1.1) translate(10px,0px);
+    -ms-transform: scale(1.1) translate(10px,0px);
+    -o-transform: scale(1.1) translate(10px,0px);
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card .showtime {
+    background-color: #FF1F2C;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card .wiki {
+    background-color: #AFB0B2;
+}
+
+.tutorials .tutorials-content .tools .tool-pic .pic-card .imdb {
+    background-color: #E2B616;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
 }
