@@ -72,3 +72,45 @@
     font-size: 10px;
     color: #fff;
 }
+
+
+@media (max-width: 320px) {
+    .drugs .content .card {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .drugs .content .card .about {
+        flex-direction: column;
+    }
+
+    .drugs .content .card .about .details p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .drugs .content .card {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .drugs .content .card .about {
+        flex-direction: column;
+    }
+
+    .drugs .content .card .about .details p {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 970px) {
+    .drugs .content .card {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .drugs .content .card .about .details p {
+        font-size: 13px;
+    }
+}

@@ -22,7 +22,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-        background: #6f8d83;
+        background: #6F4D4B;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -42,29 +42,10 @@
 
 ::-moz-selection { /* Code for Firefox */
         color: #6f8d83;
-        background: #f1f1f1;
+        background: #F8D5C1;
 }
 
 ::selection {
-        color: #6f8d83;
-        background: #f1f1f1;
-}
-
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #fff;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: #fff;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-        color: #fff;
-}
-
-/* change calendar-picker color*/
-::-webkit-calendar-picker-indicator {
-        filter: invert(1);
-        -webkit-filter: invert(1);
+        color: #f1f1f1;
+        background: #6D3C3E;
 }

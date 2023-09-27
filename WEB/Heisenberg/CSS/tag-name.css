@@ -4,8 +4,21 @@
 }
 
 .tag-name h2 {
-    font-size: 90px;
+    font-size: 80px;
     color: #ffffff;
     font-weight: lighter;
     stroke: black 5px;
+    margin: 10px 0;
+}
+
+@media (max-width: 320px) {
+    .tag-name h2 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .tag-name h2 {
+        font-size: 65px;
+    }
 }

@@ -18,6 +18,14 @@
     column-gap: 5px;
 }
 
+@media (max-width: 480px) {
+    .contact-us form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .contact-us form #name {
     color: #fff;
     grid-area: name;
