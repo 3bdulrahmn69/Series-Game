@@ -1,6 +1,6 @@
 .landing {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: 100vh;
     background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     display: flex;
     justify-content: center;
@@ -9,7 +9,6 @@
 }
 
 .landing .contact {
-    min-width: 250px;
     max-width: 450px;
     display: flex;
     justify-content: center;
@@ -43,6 +42,7 @@
 .landing .contact .box-area {
     height: 350px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .landing .contact p {
@@ -96,3 +96,64 @@
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
+
+@media (max-width: 320px) {
+    .landing .contact {
+        width: 200px;
+    }
+
+    .landing .contact .box-area {
+        width: 100%;
+    }
+
+    .landing .contact .box-area input  {
+        width: 95%;
+    }
+
+    .landing .contact .box-area .email {
+        width: 95%;
+    }
+    .landing .contact .box-area textarea {
+        width: 95%;
+        height: 170px;
+    }
+    .box-area button {
+        width: 150px;
+    }
+    .landing .contact .last-note {
+        padding: 15px;
+        font-size: 7px;
+    }
+}
+
+
+@media (min-width: 321px) and (max-width:480px) {
+    .landing .contact {
+        width: 250px;
+    }
+
+    .landing .contact .box-area {
+        width: 100%;
+
+    }
+
+    .landing .contact .box-area input  {
+        width: 95%;
+    }
+
+    .landing .contact .box-area .email {
+        width: 95%;
+    }
+    .landing .contact .box-area textarea {
+        width: 95%;
+        height: 170px;
+    }
+    .box-area button {
+        width: 150px;
+    }
+    .landing .contact .last-note {
+        padding: 15px;
+        font-size: 7px;
+    }
+}
+
